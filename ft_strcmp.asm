@@ -10,7 +10,7 @@ ft_strcmp:
     mov bl, byte [rsi]
     cmp al, bl
     jne .diff
-    test al, bl
+    test al, al
     je .equal
     inc rdi
     inc rsi
@@ -18,7 +18,7 @@ ft_strcmp:
 
 .diff:
     movzx eax, al
-    movzx, ebx, bl
+    movzx ebx, bl
     sub eax, ebx
     pop rbp
     ret
@@ -27,3 +27,6 @@ ft_strcmp:
     xor eax, eax
     pop rbp
     ret
+
+
+section .note.GNU-stack noalloc noexec nowrite progbits

@@ -18,3 +18,5 @@ ft_strlen:
     mov rax, rcx
     pop rbp
     ret
+
+section .note.GNU-stack noalloc noexec nowrite progbits

@@ -3,7 +3,7 @@ global ft_strcpy
 
 ft_strcpy:
     push rbp
-    pop rbp, rsp
+    mov rbp, rsp
 
     mov rdx, rdi
 
@@ -19,3 +19,5 @@ ft_strcpy:
     mov rax, rdx
     pop rbp
     ret
+
+section .note.GNU-stack noalloc noexec nowrite progbits

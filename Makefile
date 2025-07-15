@@ -23,7 +23,7 @@ OBJ_FILES := $(patsubst %.asm,$(OBJDIR)/%.o,$(ASM_SRCS))
 BONUS_SRCS := bonus/ft_value.asm bonus/ft_atoi_base_bonus.asm \
 			bonus/ft_list_push_front_bonus.asm \
 			 bonus/ft_list_size_bonus.asm \
-			#  bonus/ft_list_sort_bonus.asm \
+			 bonus/ft_list_sort_bonus.asm \
 			#  bonus/ft_list_remove_if_bonus.asm
 
 BONUS_OBJS := $(patsubst $(BONUSDIR)%.asm,$(BONUSBUILDDIR)/%.o,$(BONUS_SRCS))
